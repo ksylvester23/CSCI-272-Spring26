@@ -1,0 +1,109 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid101\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 const int cars\{10\};\
+    int a_train[10]\{\};\
+\
+    //print the array\
+    cout << "a_train[10] = \{ ";\
+    for(int i\{0\}; i < cars; ++i)\{\
+      cout << a_train[i] << " ";\
+    \}\
+    cout << "\}" << endl;\
+\
+    //colect values for numbe rof riders in each car\
+    for( int i\{0\}; i < cars; ++i)\{\
+      cout << "Enter the number of riders in car #" << i + 1 << ": ";\
+      cin >> a_train[i];\
+\
+      //print the array\
+      cout << "a_train[10] = \{ ";\
+      for(int i\{0\}; i < cars; ++i)\{\
+        cout << a_train[i] << " ";\
+      \}\
+      cout << "\}" << endl;\
+    \}\
+    for(int i\{0\}; i < cars; ++i)\{\
+      if (a_train[i] > 50)\{\
+        cout << "Car #" << i + 1 << " has more than 50 riders." << endl;\
+      \}\
+  \
+    \}\
+    \}\
+  \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\fs26 \cf0 int account_Number\{0\}, pin\{0\}, acc_num_db\{12345678\},pin_db\{1234\};\
+char option\{0\};\
+  cout  << "***** WELCOME *****\\n" << endl;\
+\
+  cout << "Please enter your account number: ";\
+  cin >> account_Number;\
+\
+  cout << "Please enter your pin number: ";\
+  cin >> pin;\
+  if (account_Number != acc_num_db && pin != pin_db)\{\
+    cout << "Invalid Account Number or Pin Number\\n";\
+  \}\
+  else \{\
+    cout << "Login Successful\\n";\
+  \}\
+  \
+  cout << "\\n\\n***** MAIN MENU OPTIONS *****\\n" << endl;  \
+  cout << "1. Balance\\n" << endl;\
+  cout << "2. Inquiry\\n" << endl;\
+  cout << "2. Deposit Cash\\n" << endl;\
+  cout << "3. Withdraw Cash\\n" << endl;\
+  cout << "4. Exit\\n" << endl;\
+\
+  cout << "Which option will you choose?: ";\
+  cin >> option;\
+  switch(option)\{\
+    case 'B': cout << "Your balance is $1\\n";\
+    break;\
+    case 'I': cout << "Call us at 800-888-8888 to learn more information\\n";\
+    break;\
+    case 'D': cout << "You deposited 250 dollars\\n";\
+    break;\
+    case 'W': cout << "You withdrew 100 dollars\\n";\
+    break;\
+    case 'E': cout << "Press again to exit...\\n";\
+    break;\
+    default : cout << "Invalid Selection";\
+    break;\
+  \}\
+\}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f1\fs26 \cf0 {\listtext	\uc0\u8259 	} int slices\{0\}, whole_pizzas\{0\}, total_students\{20\}, total_slices\{0\};\
+{\listtext	\uc0\u8259 	}    for (int i\{1\}; i <= total_students; ++i)\{\
+{\listtext	\uc0\u8259 	}        cout << "enter number of slices ordered for students " << i << ": " << endl;\
+{\listtext	\uc0\u8259 	}        cin >> slices;    \
+{\listtext	\uc0\u8259 	}        total_slices += slices;\
+{\listtext	\uc0\u8259 	}        \
+{\listtext	\uc0\u8259 	}    \}\
+{\listtext	\uc0\u8259 	}    whole_pizzas = total_slices / 8;\
+{\listtext	\uc0\u8259 	}    cout << whole_pizzas = (total_slices / 8) << " slices ordered" << endl;\
+\pard\tx720\pardeftab560\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8259 	}\}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+}

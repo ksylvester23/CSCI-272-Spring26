@@ -1,1 +1,156 @@
+/* 
+Name: Keira Sylvester
+Course: CSCI 272 02
+Lesson Number: Lesson 4 
+Code Topic: Classes 
+Date: 03/03/2026
+*/
+#include <iostream>
+#include "DogClass.h"
+#include "Person.h"
+#include "Car.h"
+
+int main()
+{
+    Dog dog1 ("Pitbull", "Black", 5);
+    dog1.showInfo();
+    
+    Person person1;
+    person1.intro();
+    
+    Car car1;
+    Car car2("Kia", "K5", 2025);
+    Car car3(car2);
+    Car* pCar1 = new Car;
+    Car* pCar2 = new Car("Kia", "K5", 2025);
+    car1.startEngine();
+    car2.startEngine();
+    car3.startEngine();
+    
+    pCar1->startEngine();
+    pCar2->startEngine(); 
+
+    return 0;
+}
+
+
+/* 
+Name: Keira Sylvester
+Course: CSCI 272 02
+Lesson Number: Lesson 4 
+Code Topic: Classes 
+Date: 03/03/2026
+*/
+using namespace std;
+class Dog{
+    private: //Can only be accessed within this class
+    string breed;
+    string color;
+    int age;
+    
+    public: //Can be accessed anywhere
+    Dog(string b, string c, int a){
+        breed = b;
+        color = c; 
+        age = a;
+    }
+    void showInfo(){
+        cout << "Breed: " << breed << "  |  Color: " << color << "  |  Age: " << age << "y/o" << endl;
+    }
+};
+
+/*
+1. From this code, I understood how to set up a class in code using a basic example of a dog and its objects (breed, color, age).
+2. I had minor errors like small typos within certain lines from typing too fast.
+3. I didn't researched anything to help this code besides examples of classes.
+4. I did not use AI for this code.
+5. I learned the basic way of building a class using string and integer to identify the objects in parameters for an efficient output.
+*/
+
+
+
+/* 
+Name: Keira Sylvester
+Course: CSCI 272 02
+Lesson Number: Lesson 4 
+Code Topic: Classes 
+Date: 03/03/2026
+*/
+using namespace std;
+
+class Person{
+    public: 
+    string name {"Bobby"};
+    int age{18};
+    char gender {'M'};
+    
+    public:
+    void intro(){
+        cout << "Enter your gender: ";
+        cin >> gender;
+        
+        cout << "Hello! My name is " << name << ". I am " << age << " y/o." << endl;
+        
+        if(gender == 'M'){
+            cout << " I am a Male." << endl;
+        }
+        else if(gender == 'F'){
+            cout << " I am a Female." << endl;
+        }
+        else{
+            cout << "Gender Unknown" << endl;
+        }
+    }
+};
+
+/*
+1. From this code, I understood how to include a basic if/else statement in a class to output the results of the class based on user input.
+2. I had no errors.
+3. I didn't researched anything to help this code.
+4. I did not use AI for this code.
+5. I learned how to build a fully initialized class that outputs according to user input.
+*/
+
+
+/* 
+Name: Keira Sylvester
+Course: CSCI 272 02
+Lesson Number: Lesson 4 
+Code Topic: Constructors
+Date: 03/03/2026
+*/
+using namespace std;
+
+class Car{
+    
+    private:
+    string brand{"Nissan"};
+    string model{"Altima"};
+    int year{2017};
+    
+    public:
+    Car(){ //this is the default constructor 
+    }
+    Car(string b, string m, int y){ //the parameterized constructor
+        brand = b;
+        model = m;
+        year = y;
+    }
+    Car(const Car &other){ //this is the copy constructor
+    brand = other.brand;
+    model = other.model;
+    year = other.year;
+    }
+    void startEngine(){
+     cout << brand << " " << model << " " << year << " started Engine" << endl;
+          }  
+    };
+
+/*
+1. From this code, I understood how to build and organize a class with a default, parameterized, and copy constructor.
+2. I had an error with the positioning of my void function, causing me to have one too many curly brackets.
+3. I didn't researched anything to help this code.
+4. I did use AI for this code to show me where I went wrong originally. It then showed me that it was my curly brackets that were stopping my code from fully excecuting.
+5. I learned how to take time understanding the difference between all of the different constructors. I am a little confused on how the default constructor can contain nothing within the curly brackets and still execute properly.
+*/
 
